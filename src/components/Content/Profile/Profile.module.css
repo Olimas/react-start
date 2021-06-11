@@ -1,0 +1,14 @@
+.profile {
+	border: 1px solid #000;
+	margin-bottom: 30px;
+}
+.profileImg {
+	border: 1px solid #000;
+	display: inline-block;
+	max-width: 200px;
+	margin-right: 30px;
+}
+.profileDescription {
+	display: inline-block;
+	max-width: 350px;
+}

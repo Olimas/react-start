@@ -1,0 +1,13 @@
+.aside {
+	background-color: rgb(133, 133, 219);
+	grid-area: n;
+}
+.itemList {
+	list-style-type: none;
+}
+.item a {
+	color: honeydew;
+}
+.item.active a {
+	color: gold;
+}

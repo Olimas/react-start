@@ -1,0 +1,21 @@
+.post {
+	margin-top: 30px;
+	border: 1px solid #000;
+	font-size: 14px;
+}
+.postImg {
+	border: 1px solid #000;
+	display: inline-block;
+	margin-right: 30px;
+}
+.postImg img {
+	width: 100px;
+	height: 100px;
+}
+.postTitle {
+	font-size: 24px;
+}
+.postDescription {
+	display: inline-block;
+	max-width: 250px;
+}

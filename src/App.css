@@ -13,30 +13,3 @@
 	max-width: 100%;
 	border: 1px solid #000;
 }
-.header {
-	background-color: green;
-	grid-area: h;
-}
-.header img {
-	max-width: 100px;
-}
-.aside {
-	background-color: blue;
-	grid-area: n;
-}
-.content {
-	background-color: red;
-	grid-area: c;
-	min-height: 50vh;
-}
-.content img {
-	display: block;
-	max-height: 200px;
-	min-width: 100%;
-	margin: 0 auto;
-}
-.footer {
-	min-height: 124px;
-	background-color: yellow;
-	grid-area: f;
-}
