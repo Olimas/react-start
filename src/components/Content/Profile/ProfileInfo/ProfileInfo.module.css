@@ -1,0 +1,29 @@
+.profile {
+  border: 1px solid #000;
+  margin-bottom: 30px;
+}
+
+.profileImg {
+  display: block;
+  margin: 0px auto 30px auto;
+}
+
+.profileImg img {
+  max-height: 200px;
+  min-width: 100%;
+}
+
+.profileLogo {
+  border: 1px solid #000;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.profileLogo img {
+  max-width: 200px;
+}
+
+.profileDescription {
+  display: inline-block;
+  max-width: 350px;
+}

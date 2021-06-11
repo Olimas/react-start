@@ -1,13 +1,18 @@
 .aside {
-	background-color: rgb(133, 133, 219);
-	grid-area: n;
+  background-color: rgb(133, 133, 219);
+  grid-area: n;
+  padding: 20px;
 }
+
 .itemList {
-	list-style-type: none;
+  list-style-type: none;
 }
+
 .item a {
-	color: honeydew;
+  color: honeydew;
+  text-decoration: none;
 }
-.item.active a {
-	color: gold;
+
+.item a.activeLink {
+  color: gold;
 }
