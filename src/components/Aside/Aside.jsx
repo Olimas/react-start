@@ -1,7 +1,8 @@
 import s from './Aside.module.css'
 import {NavLink} from "react-router-dom";
+import Friends from "./Friends/Friends";
 
-const Aside = () => {
+const Aside = (props) => {
   return (
     <aside className={s.aside}>
       <ul className={s.itemList}>
@@ -21,7 +22,9 @@ const Aside = () => {
           <NavLink to="/settings" activeClassName={s.activeLink}>Settings</NavLink>
         </li>
       </ul>
+      <Friends dialogs={props.state.dialogs}/>
     </aside>
   );
 };
+
 export default Aside;

@@ -8,19 +8,26 @@ import Profile from "./components/Content/Profile/Profile";
 import News from "./components/Content/News/News";
 import Music from "./components/Content/Music/Music";
 import Settings from "./components/Content/Settings/Settings";
+import Friends from "./components/Aside/Friends/Friends";
 
-const App = () => {
+const App = (props) => {
+
+  //* Higher Order Component (HOC)
+  // let SomeComponent = () => <Profile/>
+
   return (
     <BrowserRouter>
       <div className="app-wrapper">
         <Header/>
-        <Aside/>
+        <Aside state={props.state.dialogsPage}/>
         <div className="content">
-          <Route path="/profile" component={Profile}/>
-          <Route path="/dialogs" component={Dialogs}/>
-          <Route path="/news" component={News}/>
-          <Route path="/music" component={Music}/>
-          <Route path="/settings" component={Settings}/>
+          <Route path="/profile"
+                 render={() => <Profile state={props.state.profilePage}/>}/>
+          <Route path="/dialogs"
+                 render={() => <Dialogs state={props.state.dialogsPage}/>}/>
+          <Route path="/news" render={() => <News/>}/>
+          <Route path="/music" render={() => <Music/>}/>
+          <Route path="/settings" render={() => <Settings/>}/>
         </div>
         <Footer/>
       </div>
