@@ -1,7 +1,6 @@
 import s from './Post.module.css';
 
 const Post = (props) => {
-
   return (
     <div className={s.post}>
       <div className={s.postImg}>
@@ -21,4 +20,5 @@ const Post = (props) => {
     </div>
   );
 };
+
 export default Post;
