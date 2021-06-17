@@ -21,6 +21,9 @@ const Aside = (props) => {
         <li className={s.item}>
           <NavLink to="/settings" activeClassName={s.activeLink}>Settings</NavLink>
         </li>
+        <li className={s.item}>
+          <NavLink to="/users" activeClassName={s.activeLink}>Users</NavLink>
+        </li>
       </ul>
     </aside>
   );

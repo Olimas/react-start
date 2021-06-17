@@ -1,0 +1,14 @@
+.users {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid #000;
+}
+.user {
+  margin: 10px 20px 0px 20px;
+}
+img {
+  display: block;
+  max-width: 100px;
+}
