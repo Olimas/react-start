@@ -22,7 +22,6 @@ const Aside = (props) => {
           <NavLink to="/settings" activeClassName={s.activeLink}>Settings</NavLink>
         </li>
       </ul>
-      <Friends dialogs={props.state.dialogs}/>
     </aside>
   );
 };
