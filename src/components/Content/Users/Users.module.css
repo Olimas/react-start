@@ -3,7 +3,11 @@
   justify-content: left;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
   border: 1px solid #000;
+  font-size: 14px;
+  color: black;
 }
 .user {
   margin: 10px 20px 0px 20px;
@@ -11,4 +15,7 @@
 img {
   display: block;
   max-width: 100px;
+}
+.getUsers {
+  margin: 10px 20px 0px 20px;
 }
