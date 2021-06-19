@@ -10,7 +10,7 @@ import Settings from "./components/Content/Settings/Settings";
 import DialogsContainer from "./components/Content/Dialogs/DialogsContainer";
 import UsersContainer from "./components/Content/Users/UsersContainer";
 
-const App = (props) => {
+const App = () => {
 
   return (
     <BrowserRouter>
@@ -18,10 +18,8 @@ const App = (props) => {
         <Header/>
         <Aside/>
         <div className="content">
-          <Route path="/profile"
-                 render={() => <Profile/>}/>
-          <Route path="/dialogs"
-                 render={() => <DialogsContainer/>}/>
+          <Route path="/profile" render={() => <Profile/>}/>
+          <Route path="/dialogs" render={() => <DialogsContainer/>}/>
           <Route path="/news" render={() => <News/>}/>
           <Route path="/music" render={() => <Music/>}/>
           <Route path="/settings" render={() => <Settings/>}/>

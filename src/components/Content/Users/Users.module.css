@@ -1,3 +1,7 @@
+.usersContainer {
+  max-width: 100vw;
+}
+
 .users {
   display: flex;
   justify-content: left;
@@ -9,13 +13,33 @@
   font-size: 14px;
   color: black;
 }
+
 .user {
   margin: 10px 20px 0px 20px;
 }
+
+.selectedPage {
+  font-weight: bold;
+}
+
+span {
+  max-width: 1000px;
+  margin: 0px 10px 10px 0px;
+  cursor: pointer;
+}
+
+.spanContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  margin-top: 10px;
+}
+
 img {
   display: block;
   max-width: 100px;
 }
+
 .getUsers {
   margin: 10px 20px 0px 20px;
 }
