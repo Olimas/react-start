@@ -13,6 +13,9 @@ const Aside = (props) => {
           <NavLink to="/dialogs" activeClassName={s.activeLink}>Dialogs</NavLink>
         </li>
         <li className={s.item}>
+          <NavLink to="/users" activeClassName={s.activeLink}>Users</NavLink>
+        </li>
+        <li className={s.item}>
           <NavLink to="/news" activeClassName={s.activeLink}>News</NavLink>
         </li>
         <li className={s.item}>
@@ -20,9 +23,6 @@ const Aside = (props) => {
         </li>
         <li className={s.item}>
           <NavLink to="/settings" activeClassName={s.activeLink}>Settings</NavLink>
-        </li>
-        <li className={s.item}>
-          <NavLink to="/users" activeClassName={s.activeLink}>Users</NavLink>
         </li>
       </ul>
     </aside>

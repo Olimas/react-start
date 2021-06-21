@@ -1,4 +1,10 @@
 .profile {
+  font-weight: normal;
+  line-height: 20px;
+}
+.profileContainer {
+  display: flex;
+  flex-direction: row;
   border: 1px solid #000;
   margin-bottom: 30px;
 }
@@ -11,19 +17,26 @@
 .profileImg img {
   max-height: 200px;
   min-width: 100%;
+  max-width: 200px;
 }
-
+.profileContacts {
+  max-width: 200px;
+}
 .profileLogo {
-  border: 1px solid #000;
   display: inline-block;
   margin-right: 30px;
 }
 
 .profileLogo img {
+  min-height: 200px;
   max-width: 200px;
+  border: 1px solid #000;
 }
 
 .profileDescription {
   display: inline-block;
   max-width: 350px;
+}
+span {
+  font-weight: normal;
 }
