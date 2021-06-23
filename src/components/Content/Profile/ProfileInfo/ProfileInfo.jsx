@@ -1,19 +1,20 @@
 import s from './ProfileInfo.module.css';
 import Preloader from "../../../common/preloader/Preloader";
+import userPhoto from '../../../../assets/images/user.png'
+import ProfileStatus from './ProfileStatus'
 
 const ProfileInfo = (props) => {
   if (!props.profile) {
     return <Preloader/>
   }
-  debugger
   return (
     <div className={s.profile}>
       <div className={s.profileImg}>
-        <img src="https://cdn.mos.cms.futurecdn.net/wtqqnkYDYi2ifsWZVW2MT4-1200-80.jpg" alt="image-beach"/>
+        {/*<img src="https://cdn.mos.cms.futurecdn.net/wtqqnkYDYi2ifsWZVW2MT4-1200-80.jpg" alt="image-beach"/>*/}
       </div>
       <div className={s.profileContainer}>
         <div className={s.profileLogo}>
-          <img src={props.profile.photos.large} alt="user not added image"/>
+          <img src={props.profile.photos.large ? props.profile.photos.large : userPhoto} alt="user not added image"/>
           <div className={s.profileContacts}>
             <h3>Contacts:</h3>
             <h4>Facebook: <span>{props.profile.facebook ? props.profile.facebook : "not added"}</span></h4>
@@ -33,6 +34,7 @@ const ProfileInfo = (props) => {
         </div>
         <div className={s.profileDescription}>
           <h2>Profile description</h2>
+          <ProfileStatus status={"test status"}/>
           <h3>AboutMe: <span>{props.profile.aboutMe ? props.profile.aboutMe : "not added"}</span></h3>
 
           <h3>LookingForAJob: <span>{props.profile.lookingForAJobDescription ? props.profile.lookingForAJobDescription : "not added"}</span>

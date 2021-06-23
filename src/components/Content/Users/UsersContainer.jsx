@@ -9,8 +9,6 @@ import Users from "./Users";
 import Preloader from "../../common/preloader/Preloader";
 import {compose} from "redux";
 import {withAuthRedirect} from "../../../hoc/withAuthRedirect";
-import Dialogs from "../Dialogs/Dialogs";
-
 
 class UsersContainer extends React.Component {
   componentDidMount() {
