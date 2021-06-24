@@ -19,7 +19,21 @@ class ProfileContainer extends React.Component {
     //
     // }, 1000)
   }
+  componentDidUpdate(prevProps, prevState, snapshot) {
+    if (prevProps.status !== this.props.status) {
+      this.setState({
+        status: this.props.status
+      })
+    }
+
+    // debugger
+    let a = this.props;
+    let b = this.state;
+    console.log("componentDidUpdate")
+  }
+
   render() {
+    console.log("render")
     return (
       <Profile {...this.props} profile={this.props.profile} status={this.props.status} updateStatus={this.props.updateStatus}/>
     )
@@ -32,7 +46,7 @@ let mapStateToProps = (state) => ({
 })
 
 export default compose(
-  connect(mapStateToProps, {getUserProfile, getStatus, updateStatus}),
   withRouter,
   // withAuthRedirect
+  connect(mapStateToProps, {getUserProfile, getStatus, updateStatus}),
 )(ProfileContainer);

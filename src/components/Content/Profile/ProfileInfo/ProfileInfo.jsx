@@ -34,7 +34,9 @@ const ProfileInfo = (props) => {
         </div>
         <div className={s.profileDescription}>
           <h2>Profile description</h2>
+
           <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
+
           <h3>AboutMe: <span>{props.profile.aboutMe ? props.profile.aboutMe : "not added"}</span></h3>
 
           <h3>LookingForAJob: <span>{props.profile.lookingForAJobDescription ? props.profile.lookingForAJobDescription : "not added"}</span>
