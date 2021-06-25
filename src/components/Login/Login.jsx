@@ -7,6 +7,7 @@ import {connect} from "react-redux";
 import {login} from "../../redux/auth-reducer";
 import {Redirect} from "react-router-dom";
 // import mapStateToProps from "react-redux/lib/connect/mapStateToProps";
+import styles from "../common/formsControls/FormControls.module.css"
 
 const maxLength50 = maxLengthCreator(50);
 
@@ -14,7 +15,7 @@ const LoginForm = (props) => {
   return (
     <form onSubmit={props.handleSubmit}>
       <div>
-        <Field placeholder={"Email"} name={"email"} type={"email"} component={Input}
+        <Field placeholder={"Email"} name={"email"} component={Input}
                validate={[required, maxLength50]}/>
       </div>
       <div>
@@ -24,6 +25,11 @@ const LoginForm = (props) => {
       <div>
         <Field name={"rememberMe"} type="checkbox" component={Input}/>remember me
       </div>
+      {props.error &&
+      <div className={styles.formSummaryError}>
+        {props.error}
+      </div>
+      }
       <div>
         <button>Login</button>
       </div>
