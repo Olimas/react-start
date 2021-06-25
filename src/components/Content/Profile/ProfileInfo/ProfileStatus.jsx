@@ -1,3 +1,5 @@
+//TODO: Доделать статус (возможно где-то потерял скобки {} или []
+
 import React from "react";
 import s from './ProfileInfo.module.css';
 

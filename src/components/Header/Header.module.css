@@ -2,6 +2,8 @@
   display: flex;
 	background-color: rgb(122, 228, 122);
 	grid-area: h;
+  font-size: 24px;
+  color: #000000;
 }
 .header img {
 	display: block;
@@ -11,4 +13,5 @@
 .loginBlock {
   /*float: right;*/
   font-size: 24px;
+  color: #000000;
 }
