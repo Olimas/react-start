@@ -1,7 +1,6 @@
 import s from './ProfileInfo.module.css';
 import Preloader from "../../../common/preloader/Preloader";
 import userPhoto from '../../../../assets/images/user.png'
-import ProfileStatus from './ProfileStatus'
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 
 const ProfileInfo = (props) => {
@@ -10,9 +9,6 @@ const ProfileInfo = (props) => {
   }
   return (
     <div className={s.profile}>
-      <div className={s.profileImg}>
-        {/*<img src="https://cdn.mos.cms.futurecdn.net/wtqqnkYDYi2ifsWZVW2MT4-1200-80.jpg" alt="image-beach"/>*/}
-      </div>
       <div className={s.profileContainer}>
         <div className={s.profileLogo}>
           <img src={props.profile.photos.large ? props.profile.photos.large : userPhoto} alt="user not added image"/>

@@ -6,7 +6,6 @@ import {maxLengthCreator, required} from "../../utils/validators/validators";
 import {connect} from "react-redux";
 import {login} from "../../redux/auth-reducer";
 import {Redirect} from "react-router-dom";
-// import mapStateToProps from "react-redux/lib/connect/mapStateToProps";
 import styles from "../common/formsControls/FormControls.module.css"
 
 const maxLength50 = maxLengthCreator(50);

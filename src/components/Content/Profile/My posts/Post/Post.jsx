@@ -14,7 +14,6 @@ const Post = (props) => {
       </div>
       <div className={s.postColumn}>
         <div className={s.postDescription}>
-          {/*<h3 className={s.postTitle}></h3>*/}
           <p className={s.postMessage}>{props.message}</p>
         </div>
       </div>

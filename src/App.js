@@ -15,7 +15,6 @@ import {connect} from "react-redux";
 import {compose} from "redux";
 import {initializeApp} from "./redux/app-reducer";
 import Preloader from "./components/common/preloader/Preloader";
-import {setCurrentPage} from "./redux/users-reducer";
 
 class App extends Component {
 
@@ -53,7 +52,3 @@ const mapStateToProps = (state) => ({
 export default compose(
   withRouter,
   connect(mapStateToProps, {initializeApp}))(App);
-
-
-
-

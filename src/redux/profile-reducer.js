@@ -31,41 +31,29 @@ const profileReducer = (state = initialState, action) => {
       return {
         ...state, status: action.status,
       }
-      case DELETE_POST:
+    case DELETE_POST:
       return {
-        ...state, posts: state.posts.filter(p => p.id != action.id),
+        ...state, posts: state.posts.filter(p => p.id != action.postId),
       }
     default:
       return state;
   }
 }
 
-export const getUserProfile = (userId) => {
-  return (dispatch) => {
-    usersAPI.getUserProfile(userId)
-      .then(response => {
-        dispatch(setUserProfile(response.data));
-      });
-  }
+export const getUserProfile = (userId) => async (dispatch) => {
+  const response = await usersAPI.getUserProfile(userId);
+  dispatch(setUserProfile(response.data));
 }
 
-export const getStatus = (userId) => {
-  return (dispatch) => {
-    profileAPI.getStatus(userId)
-      .then(response => {
-        dispatch(setStatus(response.data));
-      });
-  }
+export const getStatus = (userId) => async (dispatch) => {
+  const response = await profileAPI.getStatus(userId);
+  dispatch(setStatus(response.data));
 }
 
-export const updateStatus = (status) => {
-  return (dispatch) => {
-    profileAPI.updateStatus(status)
-      .then(response => {
-        if (response.data.resultCode === 0) {
-          dispatch(setStatus(response.data));
-        }
-      });
+export const updateStatus = (status) => async (dispatch) => {
+  const response = await profileAPI.updateStatus(status);
+  if (response.data.resultCode === 0) {
+    dispatch(setStatus(response.data));
   }
 }
 
