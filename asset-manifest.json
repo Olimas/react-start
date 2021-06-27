@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Olimas/react-start/static/css/main.03af7a23.chunk.css",
-    "main.js": "/Olimas/react-start/static/js/main.2805bacf.chunk.js",
-    "main.js.map": "/Olimas/react-start/static/js/main.2805bacf.chunk.js.map",
+    "main.js": "/Olimas/react-start/static/js/main.d3606c4e.chunk.js",
+    "main.js.map": "/Olimas/react-start/static/js/main.d3606c4e.chunk.js.map",
     "runtime-main.js": "/Olimas/react-start/static/js/runtime-main.7a980455.js",
     "runtime-main.js.map": "/Olimas/react-start/static/js/runtime-main.7a980455.js.map",
     "static/js/2.7154649e.chunk.js": "/Olimas/react-start/static/js/2.7154649e.chunk.js",
@@ -32,6 +32,6 @@
     "static/js/runtime-main.7a980455.js",
     "static/js/2.7154649e.chunk.js",
     "static/css/main.03af7a23.chunk.css",
-    "static/js/main.2805bacf.chunk.js"
+    "static/js/main.d3606c4e.chunk.js"
   ]
 }
