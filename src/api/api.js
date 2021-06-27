@@ -19,7 +19,7 @@ export const usersAPI = {
     return instance.delete(`follow/${userId}`);
   },
   getUserProfile(userId) {
-    console.warn('Obsolete method. Please use profileAPI object.')
+    // console.warn('Obsolete method. Please use profileAPI object.')
     return profileAPI.getUserProfile(userId);
   },
 }
@@ -32,9 +32,7 @@ export const profileAPI = {
     return instance.get(`profile/status/${userId}`);
   },
   updateStatus(status) {
-    return instance.put(`profile/status`, {
-      status: status
-    });
+    return instance.put(`profile/status`, {status: status}); //TODO: Возможно ошибка здесь
   },
 }
 
