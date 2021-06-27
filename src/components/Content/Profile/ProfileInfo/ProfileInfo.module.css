@@ -1,6 +1,7 @@
 .profile {
   font-weight: normal;
-  line-height: 20px;
+  line-height: 25px;
+  /*font-size: 18px;*/
 }
 .profileContainer {
   display: flex;
@@ -38,7 +39,13 @@
   max-width: 350px;
 }
 .profileStatus {
-
+  display: inline-block;
+}
+.fullName {
+  font-size: 24px;
+}
+.contacts {
+  padding-left: 10px;
 }
 span {
   font-weight: normal;

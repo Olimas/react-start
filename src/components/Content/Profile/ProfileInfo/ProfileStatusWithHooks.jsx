@@ -1,8 +1,3 @@
-//TODO: Ошибка при обновлении статуса.
-// Описание: когда пишем новый статус в input и сохраняем его, то
-// в setStatus передается {Object object}, а должна строка,
-// но после перезагрузки страницы статус обновляется и меняется на строку
-
 import React, {useEffect, useState} from "react";
 import s from './ProfileInfo.module.css';
 
