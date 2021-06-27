@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Olimas/react-start/static/css/main.03af7a23.chunk.css",
+    "main.js": "/Olimas/react-start/static/js/main.2805bacf.chunk.js",
+    "main.js.map": "/Olimas/react-start/static/js/main.2805bacf.chunk.js.map",
+    "runtime-main.js": "/Olimas/react-start/static/js/runtime-main.7a980455.js",
+    "runtime-main.js.map": "/Olimas/react-start/static/js/runtime-main.7a980455.js.map",
+    "static/js/2.7154649e.chunk.js": "/Olimas/react-start/static/js/2.7154649e.chunk.js",
+    "static/js/2.7154649e.chunk.js.map": "/Olimas/react-start/static/js/2.7154649e.chunk.js.map",
+    "static/css/3.8641aa79.chunk.css": "/Olimas/react-start/static/css/3.8641aa79.chunk.css",
+    "static/js/3.23973508.chunk.js": "/Olimas/react-start/static/js/3.23973508.chunk.js",
+    "static/js/3.23973508.chunk.js.map": "/Olimas/react-start/static/js/3.23973508.chunk.js.map",
+    "static/css/4.fb487179.chunk.css": "/Olimas/react-start/static/css/4.fb487179.chunk.css",
+    "static/js/4.071e55f3.chunk.js": "/Olimas/react-start/static/js/4.071e55f3.chunk.js",
+    "static/js/4.071e55f3.chunk.js.map": "/Olimas/react-start/static/js/4.071e55f3.chunk.js.map",
+    "static/css/5.9c61f07b.chunk.css": "/Olimas/react-start/static/css/5.9c61f07b.chunk.css",
+    "static/js/5.0da4f6ee.chunk.js": "/Olimas/react-start/static/js/5.0da4f6ee.chunk.js",
+    "static/js/5.0da4f6ee.chunk.js.map": "/Olimas/react-start/static/js/5.0da4f6ee.chunk.js.map",
+    "static/js/6.f1b5da78.chunk.js": "/Olimas/react-start/static/js/6.f1b5da78.chunk.js",
+    "static/js/6.f1b5da78.chunk.js.map": "/Olimas/react-start/static/js/6.f1b5da78.chunk.js.map",
+    "index.html": "/Olimas/react-start/index.html",
+    "static/css/3.8641aa79.chunk.css.map": "/Olimas/react-start/static/css/3.8641aa79.chunk.css.map",
+    "static/css/4.fb487179.chunk.css.map": "/Olimas/react-start/static/css/4.fb487179.chunk.css.map",
+    "static/css/5.9c61f07b.chunk.css.map": "/Olimas/react-start/static/css/5.9c61f07b.chunk.css.map",
+    "static/css/main.03af7a23.chunk.css.map": "/Olimas/react-start/static/css/main.03af7a23.chunk.css.map",
+    "static/js/2.7154649e.chunk.js.LICENSE.txt": "/Olimas/react-start/static/js/2.7154649e.chunk.js.LICENSE.txt",
+    "static/js/4.071e55f3.chunk.js.LICENSE.txt": "/Olimas/react-start/static/js/4.071e55f3.chunk.js.LICENSE.txt",
+    "static/media/spinner-3.a1a99674.gif": "/Olimas/react-start/static/media/spinner-3.a1a99674.gif",
+    "static/media/user.png": "/Olimas/react-start/static/media/user.f5bbe167.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a980455.js",
+    "static/js/2.7154649e.chunk.js",
+    "static/css/main.03af7a23.chunk.css",
+    "static/js/main.2805bacf.chunk.js"
+  ]
+}
