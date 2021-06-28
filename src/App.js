@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter, Route, withRouter} from "react-router-dom"
+import {BrowserRouter, Redirect, Route, withRouter} from "react-router-dom"
 import Aside from './components/Aside/Aside';
 import Footer from './components/Footer/Footer';
 import News from "./components/Content/News/News";
@@ -26,8 +26,17 @@ const UsersContainer = React.lazy(() => import('./components/Content/Users/Users
 
 class App extends Component {
 
+  catchAllUnhandleErrors = (reason, promiseRejectionEvent) => {
+    alert("Some error occured");
+    // console.error(promiseRejectionEvent);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("unhandledrejection", this.catchAllUnhandleErrors);
+  }
+
   componentDidMount() {
     this.props.initializeApp();
+    window.addEventListener("unhandledrejection", this.catchAllUnhandleErrors);
   }
 
   render() {
@@ -58,6 +67,8 @@ class App extends Component {
           <Route path="/music" render={() => <Music/>}/>
           <Route path="/settings" render={() => <Settings/>}/>
           <Route path="/login" render={() => <LoginPage/>}/>
+          <Route path="/" render={() => <Redirect to="/profile"/>}/>
+          {/*<Route path="*" render={() => <div>404 NOT FOUND</div>}/>*/}
         </div>
         <Footer/>
       </div>

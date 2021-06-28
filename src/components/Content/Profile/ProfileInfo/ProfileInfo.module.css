@@ -1,6 +1,6 @@
 .profile {
   font-weight: normal;
-  line-height: 25px;
+  /*line-height: 27px;*/
   /*font-size: 18px;*/
 }
 .profileContainer {
@@ -21,6 +21,7 @@
   max-width: 200px;
 }
 .profileContacts {
+  margin-left: -280px;
   max-width: 200px;
 }
 .profileLogo {

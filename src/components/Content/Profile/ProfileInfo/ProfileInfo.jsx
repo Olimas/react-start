@@ -30,7 +30,6 @@ const ProfileInfo = ({profile, status, updateStatus, isOwner, savePhoto, savePro
         <div className={s.profileLogo}>
           <img src={profile.photos.large || userPhoto} alt="user not added image"/>
           <div>{isOwner && <input type={"file"} onChange={onMainPhotoSelected}/>}</div>
-
         </div>
         <div className={s.profileDescription}>
           <b>Status: <ProfileStatusWithHooks status={status} updateStatus={updateStatus}
@@ -53,9 +52,7 @@ const ProfileData = ({profile, isOwner, goToEditMode}) => {
     {isOwner && <div>
       <button onClick={goToEditMode}>Edit profile</button>
     </div>}
-
     <div className={s.fullName}><h3>FullName: <span>{profile.fullName || "not added"}</span></h3></div>
-
     <h2>Profile description</h2>
     <div><h3>AboutMe: <span>{profile.aboutMe || "not added"}</span></h3></div>
     <div><b>LookingForAJob: <span>{profile.lookingForAJob ? "yes" : "no"}</span></b></div>
